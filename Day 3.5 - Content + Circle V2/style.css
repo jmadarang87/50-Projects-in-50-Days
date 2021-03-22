@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Oswald', sans-serif;
-    background-color: purple;
+    background-color: rgb(190, 37, 173);
     color: black;
     overflow-x: hidden;
     margin:0;
@@ -22,7 +22,7 @@ body {
 }
 
 .container.show-nav {
-    transform: translateX(25%);
+    transform: translateX(30%);
 }
 
 .circle-container {
@@ -92,7 +92,7 @@ nav ul li {
     text-transform: uppercase;
     color: white;
     margin: 40px 0;
-    transform: translateX(-100%);
+    transform: translateX(-200%);
     transition: transform 0.4s ease;
 }
 
@@ -116,7 +116,7 @@ nav ul li + li + li {
 }
 
 .content {
-    max-width: 1000px;
+    max-width: 600px;
     margin: 50px auto;
 }
 

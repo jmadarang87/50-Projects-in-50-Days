@@ -1,0 +1,58 @@
+* {font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left img {
+    max-width: 150px;
+    max-height: 50px;
+}
+
+.nav-left ul {
+    list-style-type: none;
+}
+
+.nav-left li {
+    float: left;
+    margin: 10px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right i {
+    padding: 10px;
+    margin: 5px;
+}
+
+.nav-right ul {
+    list-style-type: none;
+}
+
+.nav-right li {
+    float: right;
+    margin: 5px;
+}
+
+.sign-in {
+    padding: 10px 20px;
+}
+
+
+.sign-up {
+    background-color: rgb(255, 94, 201);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+}

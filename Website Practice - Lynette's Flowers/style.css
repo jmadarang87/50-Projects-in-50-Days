@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left img {
+    max-width: 150px;
+    max-height: 50px;
+}
+
+.nav-left ul {
+    list-style-type: none;
+}
+
+.nav-left li {
+    float: left;
+    margin: 10px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right i {
+    padding: 10px;
+    margin: 5px;
+}
+
+.nav-right ul {
+    list-style-type: none;
+}
+
+.nav-right li {
+    float: right;
+    margin: 5px;
+}
+
+.sign-in {
+    padding: 10px 20px;
+}
+
+
+.sign-up {
+    background-color: rgb(255, 94, 201);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.home-header-container {
+    background: rgb(223, 202, 228);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0px;
+}
+
+.home-image-text {
+    padding-left: 15px;
+}
+
+.main-image {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40vw;
+}
+
+button {
+    border: none;
+}
+
+.main-design-list {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+select {
+    border: 1px solid grey;
+    border-radius: 8px;
+    width: 125px;
+    height: 35px;
+}
+
+select:hover {
+    border: 2px solid rgb(255, 94, 201, .7);
+}
+
+.design-filter-menu  {
+    list-style-type: none;
+    display: flex;
+}
+
+.design-filter-menu li {
+    margin: 15px;
+}
+
+.design-filter-button {
+    display: flex;
+    align-items: center;
+    font-size: 100%;
+    justify-content: space-evenly;
+    width: 100px;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 8px;
+    height: 35px;
+}
+
+.filter-icon {
+    max-height: 25px;
+}
+
+.design-card-container {
+    display: flex;
+    align-items: center;
+}
+
+.design-card-container li {
+    height: 150px;
+    width: 200px;
+    background-color: rgb(216, 167, 216);
+    border-radius: 8px;
+    list-style-type: none;
+}
+
+.design-card-item img {
+    width: 200px;
+    height: 150px;
+}
+
+.design-card-item h3 {
+    text-align: center;
+}

@@ -14,20 +14,25 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+
 }
 
 .nav-left {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .nav-left img {
     max-width: 150px;
     max-height: 50px;
+    cursor: pointer;
 }
 
 .nav-left ul {
     list-style-type: none;
+    cursor: pointer;
 }
 
 .nav-left li {
@@ -38,7 +43,6 @@ button {
 .dropdown {
     position: relative;
     display: inline-block;
-
 }
 
 .dropdown-btn {
@@ -59,10 +63,12 @@ button {
 }
 
 .dropdown-section {
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     padding: 15px;
     border-radius: 8px;
+    align-items: center;
 }
 
 .dropdown-section:hover {
@@ -79,6 +85,8 @@ button {
 
 .dropdown-content .text {
     margin-left: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 .dropdown-content .title {
@@ -91,12 +99,20 @@ button {
     color: grey;
 }
 
+.right-arrow {
+    margin-left: 5rem;
+    transition: ease .25s transform;
+    color:rgb(255, 94, 201, 0);
+}
+
+.dropdown-section:hover .right-arrow {
+    transform: translateX(100%);
+    color:rgb(255, 94, 201);
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-
 
 
 
@@ -129,6 +145,10 @@ button {
     padding: 10px 20px;
     border-radius: 10px;
     color: white;
+}
+
+.sign-up:hover {
+    background-color: rgb(255, 94, 201, .7);
 }
 
 .home-header-container {

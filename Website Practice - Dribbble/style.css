@@ -6,6 +6,10 @@ body {
     font-family: 'Ubuntu Condensed', sans-serif;
 }
 
+button {
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -30,6 +34,52 @@ body {
     float: left;
     margin: 10px;
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown-btn {
+    padding: 20px;
+    font-size: 18px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 600px;
+    padding: 25px;
+    z-index: 1;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.1);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content .title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.dropdown-content .description {
+    font-size: 16px;
+    color: grey;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
 
 .nav-right {
     display: flex;

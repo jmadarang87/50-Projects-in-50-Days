@@ -45,30 +45,59 @@ button {
     display: inline-block;
 }
 
-.dropdown-btn {
+.dropdown .dropdown-btn {
     padding: 15px;
     font-size: 18px;
     background-color: white;
+    cursor: pointer;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 600px;
-    padding: 25px;
+    min-width: 400px;
     z-index: 1;
     border-radius: 8px;
     box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.1);
 }
 
 .dropdown-section {
-    cursor: pointer;
     display: flex;
-    flex-direction: row;
     padding: 15px;
     border-radius: 8px;
     align-items: center;
+    width: 400px;
+}
+
+.dropdown-left {
+    margin: 10px;
+    display: relative;
+    width: 400px;
+}
+
+.dropdown-right {
+    margin: 10px;
+    background-color: rgb(251, 248, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 150px;
+}
+
+.dropdown-right li {
+    color: grey;
+}
+
+.dropdown-right li:hover {
+    font-weight: bold;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    display: flex;
+    justify-content: space-between;
 }
 
 .dropdown-section:hover {
@@ -78,15 +107,14 @@ button {
 
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
     text-decoration: none;
-    display: block;
 }
 
 .dropdown-content .text {
-    margin-left: 25px;
+    margin-left: 15px;
     display: flex;
     flex-direction: column;
+    width: 300px;
 }
 
 .dropdown-content .title {
@@ -100,21 +128,15 @@ button {
 }
 
 .right-arrow {
-    margin-left: 5rem;
     transition: ease .25s transform;
     color:rgb(255, 94, 201, 0);
+    margin-right: 10px;
 }
 
 .dropdown-section:hover .right-arrow {
     transform: translateX(100%);
     color:rgb(255, 94, 201);
 }
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-
 
 .nav-right {
     display: flex;

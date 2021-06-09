@@ -1,4 +1,4 @@
-*, *:: ::* {
+* {
     box-sizing: border-box;
 }
 
@@ -17,7 +17,7 @@ body {
     border-radius: 50px;
 }
 
-.output {
+.section-output {
     width: 80%;
     height: 150px;
     background-color: turquoise;
@@ -27,6 +27,11 @@ body {
     border-radius: 8px;
     margin-top: 50px;
     font-size: 32px;
+    text-align: right;
+}
+
+#output {
+    font-size: 88px;
     text-align: right;
 }
 

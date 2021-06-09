@@ -1,4 +1,4 @@
-* {
+*, *:: ::* {
     box-sizing: border-box;
 }
 
@@ -15,7 +15,6 @@ button {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-
 }
 
 .nav-left {
@@ -45,12 +44,17 @@ button {
     display: inline-block;
 }
 
-.dropdown .dropdown-btn {
+.dropdown-btn {
     padding: 15px;
     font-size: 18px;
     background-color: white;
     cursor: pointer;
 }
+
+.dropdown-btn:hover {
+    color:rgb(255, 94, 201);
+}
+
 
 .dropdown-content {
     display: none;
@@ -103,6 +107,11 @@ button {
 .dropdown-section:hover {
     background-color: rgb(255, 94, 201, .2);
     color: rgb(255, 94, 201);
+
+}
+
+.dropdown-section:hover .description {
+    color: black;
 }
 
 .dropdown-content a {
@@ -199,7 +208,7 @@ button {
 .main-design-list {
     margin-top: 15px;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
     margin-left: 25px;
     margin-right: 25px;
@@ -214,6 +223,61 @@ select {
 
 select:hover {
     border: 2px solid rgb(255, 94, 201, .7);
+}
+
+.filter {
+    position: relative;
+    border-radius: 8px;
+    
+}
+
+.filter-button {
+    width: 100px;
+    background-color: white;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.filter:hover .filter-button {
+    border: 2px solid rgb(255, 94, 201);
+}
+
+.angle-down {
+    transition: ease-in .25s;
+}
+
+.filter-button:focus .angle-down {
+    transform: rotate(180deg);
+}
+
+
+.filter-dropdown {
+    position: absolute;
+    background-color: white;
+    width: 150px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.1);
+    z-index: 1;
+    margin-top: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.filter-dropdown li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.filter-dropdown li:hover {
+    background-color:rgb(244, 244, 244);
+    border-radius: 8px;
 }
 
 .design-filter-menu  {

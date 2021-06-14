@@ -1,14 +1,21 @@
 console.log("hi");
-const filter = document.querySelector('.filter-button');
+const filterBtn = document.querySelector('.filter-button');
 const drop = document.querySelector('.filter-dropdown');
+const filterArrow = document.querySelector('.filter-arrow');
 
-
-filter.addEventListener('click', () => {
-    if (drop.classList.contains("hide")) {
-        drop.classList.remove("hide");
-        drop.classList.add("show");
+filterBtn.addEventListener('click', () => {
+    if (filterArrow.classList.contains('down')) {
+        filterArrow.classList.remove('down');
+        filterArrow.classList.add('up');
+        drop.classList.remove('hide');
+        drop.classList.add('show');
+    } else if (filterArrow.classList.contains('up')) {
+        filterArrow.classList.remove('up');
+        filterArrow.classList.add('down');
+        drop.classList.remove('show');
+        drop.classList.add('hide');
     } else {
-        drop.classList.remove("show");
-        drop.classList.add("hide"); 
-    }
+        filterArrow.classList.add('up');
+        drop.classList.add('show');
+    };
 });

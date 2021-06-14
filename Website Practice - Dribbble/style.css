@@ -10,6 +10,7 @@ button {
     font-family: 'Ubuntu Condensed', sans-serif;
 }
 
+
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -229,6 +230,7 @@ select:hover {
     position: relative;
     border-radius: 8px;
     
+    
 }
 
 .filter-button {
@@ -237,18 +239,23 @@ select:hover {
     border: 1px solid grey;
     padding: 10px;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .filter:hover .filter-button {
     border: 2px solid rgb(255, 94, 201);
 }
 
-.angle-down {
-    transition: ease-in .25s;
+.down i {
+    transform: rotate(0deg);
+    transition: transform ease-in .3s;
 }
 
-.filter-button:focus .angle-down {
+.up i {
     transform: rotate(180deg);
+    transition: transform ease-in .3s;
 }
 
 
@@ -260,15 +267,17 @@ select:hover {
     box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.1);
     z-index: 1;
     margin-top: 10px;
-}
+    opacity: 0;
+ }
 
 .hide {
-    display: none;
+    opacity: 0;
+    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 1.5s;
 }
 
 .show {
-    display: block;
-}
+    opacity: 1;
+    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 1.5s;}
 
 .filter-dropdown li {
     list-style-type: none;
